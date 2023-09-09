@@ -3,6 +3,26 @@ A browser interface based on Gradio library for Stable Diffusion.
 
 ![](screenshot.png)
 
+## Use in Vast
+
+Use image:
+
+```bash
+ccr-23gxup9u-vpc.cnc.bj.baidubce.com/model/sd-webui:v1.0.4
+```
+
+Start a docker container:
+
+```bash
+docker run -itd --name hzh_sd_webui --gpus all -v /mnt/pfs:/mnt/pfs -p 9000:9000 ccr-23gxup9u-vpc.cnc.bj.baidubce.com/model/sd-webui:v1.0.4
+```
+
+Command:
+
+```bash
+python launch.py --listen --port 9000 --xformers
+```
+
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
 - Original txt2img and img2img modes
